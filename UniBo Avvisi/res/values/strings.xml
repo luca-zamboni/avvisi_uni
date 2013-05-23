@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, UniTnAvvisiActivity!</string>
+    <string name="app_name">UniBo Avvisi</string>
+    <string name="titolo">Facoltà scienze</string>
+    <string name="titolodialog">Info e Disclaimer</string>
+    <string name="testodialog">L\'applicazione viene rilasciata in licenza d\'uso gratuito, quindi non fornisce nessuna garanzia del suo corretto funzionamento e i programmatori non si assumono la responsabilità in caso di avvisi non ricevuti.\n\nPer info, supporto e segnalazione bug e/o idee:\n<a href="" >http://www.sitesolution.it/software/Avvisi-UniBO/</a>.\n\n\n<strong>Attenzione:</strong> questa applicazione non è in nessun modo affiliata all\'Università degli studi di Bologna.</string>
+    
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#ccc"
+    android:layout_height="fill_parent" >
+    
+    <TextView
+	    android:id="@+id/line"
+	    android:layout_alignParentTop="true"
+	    android:background="@color/Giurisprudenza"
+	    android:layout_width="match_parent"
+	    android:layout_height="6dp" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lista"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/pubblicita"
+        android:layout_below="@+id/line" />
+    
+    <LinearLayout 
+        android:id="@+id/pubblicita"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+	    android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+    </LinearLayout>
+    
+</RelativeLayout>

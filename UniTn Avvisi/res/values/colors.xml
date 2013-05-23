@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="grigiastro">#D3E4E2</color>
+    <color name="weiss">#ffffff</color>
+    <color name="verde">#32cd32</color>
+    <color name="Ingegneria">#333399</color>
+    <color name="Lettere">#660000</color>
+    <color name="Sociologia">#cc3300</color>
+    <color name="Economia">#cc9933</color>
+    <color name="Giurisprudenza">#003399</color>
+    <color name="scuroverde">#249624</color>
+
+</resources>
