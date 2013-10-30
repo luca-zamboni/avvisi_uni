@@ -73,7 +73,7 @@ public class UniTnAvvisi extends SherlockFragmentActivity {
 		// starta il servizio che andrà a controllare ogni 60 * 10 secondi se ci sono
 		// nuovi avvisi
 
-		//startAds();
+		startAds();
 	}
 	
 	@Override
@@ -81,7 +81,6 @@ public class UniTnAvvisi extends SherlockFragmentActivity {
 		// TODO Auto-generated method stub
 		super.onResume();
 		
-		Log.e("ll", "ll");
 		SharedPreferences settings = PreferenceManager
 				.getDefaultSharedPreferences(getApplicationContext());
 		Iterator<Universita> i = Static.uni.iterator();
@@ -95,8 +94,6 @@ public class UniTnAvvisi extends SherlockFragmentActivity {
 				y++;
 			}
 		}
-		
-		
 		
 		if(Static.unicurr == null){
 			
@@ -174,7 +171,7 @@ public class UniTnAvvisi extends SherlockFragmentActivity {
 						UniTnAvvisi.this.getText(R.string.testodialog));
 				Linkify.addLinks(s, Linkify.WEB_URLS);
 				message.setText(s);
-				message.setTextColor(Color.WHITE);
+				message.setTextColor(Color.BLACK);
 				message.setPadding(10, 5, 5, 5);
 				message.setMovementMethod(LinkMovementMethod.getInstance());
 	
@@ -221,14 +218,10 @@ public class UniTnAvvisi extends SherlockFragmentActivity {
 
 	private void startAds() {
 
-		// AdMob
 		AdView adView = new AdView(this, AdSize.BANNER, ADMOB_ID);
-		// Effettuiamo la lookup della ViewGroup che conterrà il nostro banner
-		// Nel nostro caso è un LinearLayout con id linearLayout
 		LinearLayout layout = (LinearLayout) findViewById(R.id.pubblicita);
-		// Aggiungiamo la view adView al LinearLayout
 		layout.addView(adView);
-		// Richiediamo un nuovo banner al server di AdMod
 		adView.loadAd(new AdRequest());
+		
 	}
 }

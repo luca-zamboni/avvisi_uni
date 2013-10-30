@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,7 +61,7 @@ public class MioAdapter extends ArrayAdapter {
         	Avviso aux;
         	aux = i.next();
         	if(j==position){
-        		h.txtTitle.setText(aux.getTesto());
+        		h.txtTitle.setText(Html.fromHtml(aux.getTesto()));
                 h.txtTitle.setBackgroundColor(aux.getC());
                 h.txtTitle.setTextColor(Color.BLACK);
                 if(aux.getLink()!=null && aux.getLink()!=""){
